@@ -1,6 +1,8 @@
 #ifndef TREEMULTIMAP_INCLUDED
 #define TREEMULTIMAP_INCLUDED
 
+#include <iostream>
+
 template <typename KeyType, typename ValueType>
 class TreeMultimap
 {
@@ -30,7 +32,7 @@ class TreeMultimap
             curr = 0;
         }
         
-        Iterator(vector<Node*> v){
+        Iterator(std::vector<Node*> v){
             for (int i = 0; i<v.size(); i++){
                 itvec.push_back(v[i]);
             }
@@ -39,6 +41,10 @@ class TreeMultimap
 
         ValueType& get_value() const
         {
+            if (!is_valid()){
+                std::cout << "not defined" << std::endl;
+//                return NULL;
+            }
             return itvec[curr]->val;  // Replace this line with correct code.
         }
 
@@ -54,7 +60,7 @@ class TreeMultimap
         }
         
       private:
-        vector<Node*> itvec;
+        std::vector<Node*> itvec;
         int curr;
     };
 
@@ -75,7 +81,7 @@ class TreeMultimap
     void printTree ( const Node* p){
         if (p!=nullptr){
             printTree (p->left);
-            cout << p->val << endl;
+            std::cout << p->val << std::endl;
             printTree (p->right);
         }
     }
@@ -89,7 +95,7 @@ class TreeMultimap
 
     Iterator find(const KeyType& key) const
     {
-        vector<Node*>v;
+        std::vector<Node*>v;
         findHelper(v, key, n);  // Replace this line with correct code.
         return Iterator(v);
     }
@@ -127,7 +133,7 @@ private:
         }
     }
     
-    void findHelper (vector <Node*>& v, const KeyType& key, Node* p) const{
+    void findHelper (std::vector <Node*>& v, const KeyType& key, Node* p) const{
         if (p!=nullptr){
             findHelper(v, key, p->left);
             if (p->key==key){

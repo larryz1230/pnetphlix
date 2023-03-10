@@ -1,5 +1,7 @@
 #include "UserDatabase.h"
+#include "MovieDatabase.h"
 #include "User.h"
+#include "Movie.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -22,7 +24,9 @@ using namespace std;
   // data files to makde debuggiing easier, so you can replace the string
   // literals with the names of those smaller files.
 
-//const string USER_DATAFILE  = "users.txt";
+const string USER_DATAFILE  = "users.txt";
+
+
 //const string MOVIE_DATAFILE = "movies.txt";
 //
 //int main()
@@ -53,28 +57,51 @@ using namespace std;
 
 int main()
 {
-    TreeMultimap<int, string> tmap;
     
+    UserDatabase udb;
+    udb.load("/Users/larryzhi/Desktop/cs32/p4/file.txt");
     
+    MovieDatabase mdb;
+    mdb.load("/Users/larryzhi/Desktop/cs32/p4/p4/mmmo.txt");
     
-    tmap.insert(2, "hello");
-    tmap.insert(1, "few");
-    tmap.insert(3, "hellefo");
-    tmap.insert(5, "adlo");
-    tmap.insert(3, "adcwceo");
-    tmap.insert(2, "fewf");
-
+//    Movie* m = mdb.get_movie_from_id("ID38613");
+//    cout << m->get_title() << endl;
     
-    tmap.find(2);
-    TreeMultimap<int, string> :: Iterator it = tmap.find(3);
-    
-    
-    
-    while (it.is_valid()){
-        cout << it.get_value()<<endl;
-        it.advance();
+    vector<Movie*> dd = mdb.get_movies_with_actor("Perry Miller Adato");
+    for (int i=0; i<dd.size(); i++){
+        cout << dd[i]->get_title() << endl;
     }
+    
+    
+//    User* user = udb.get_user_from_email("AbFow2483@charter.net");
+//    cout << user->get_full_name() << endl;
+//    for (int i=0; i<user->get_watch_history().size(); i++){
+//        cout << user->get_watch_history()[i] << endl;
+//    }
+    
+    
+    
+    
+//    TreeMultimap<int, string> tmap;
 //
-    cout << "_________________" << endl;
-    tmap.printTree();
+//    tmap.insert(2, "hello");
+//    tmap.insert(1, "few");
+//    tmap.insert(3, "hellefo");
+//    tmap.insert(5, "adlo");
+//    tmap.insert(3, "adcwceo");
+//    tmap.insert(2, "fewf");
+//
+//
+//    tmap.find(2);
+//    TreeMultimap<int, string> :: Iterator it = tmap.find(3);
+//
+//
+//
+//    while (it.is_valid()){
+//        cout << it.get_value()<<endl;
+//        it.advance();
+//    }
+////
+//    cout << "_________________" << endl;
+//    tmap.printTree();
 }
