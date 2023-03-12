@@ -4,6 +4,7 @@
 #include "Movie.h"
 #include <iostream>
 #include <string>
+#include "treemm.h"
 using namespace std;
 
 //////////////////////////i/////////////////////////////////////////////////////
@@ -24,7 +25,7 @@ using namespace std;
   // data files to makde debuggiing easier, so you can replace the string
   // literals with the names of those smaller files.
 
-const string USER_DATAFILE  = "users.txt";
+const string USER_DATAFILE  = "/Users/larryzhi/Desktop/cs32/p4/file.txt";
 
 
 //const string MOVIE_DATAFILE = "movies.txt";
@@ -53,32 +54,38 @@ const string USER_DATAFILE  = "users.txt";
 //}
 //
 
-#include "treemm.h"
+//#include "treemm.h"
 
 int main()
 {
+
+    
     
     UserDatabase udb;
-    udb.load("/Users/larryzhi/Desktop/cs32/p4/file.txt");
+       udb.load(USER_DATAFILE);
+
+//       MovieDatabase mdb;
+//       mdb.load("/Users/larryzhi/Desktop/cs32/p4/p4/mmmo.txt");
+//
+//       Movie* m = mdb.get_movie_from_id("ID38613");
+//       cout << m->get_title() << endl;
+//
+//       vector<Movie*> dd = mdb.get_movies_with_director("Perry Miller Adato");
+//       for (int i=0; i<dd.size(); i++){
+//           cout << dd[i]->get_title() << endl;
+//       }
+//
     
-    MovieDatabase mdb;
-    mdb.load("/Users/larryzhi/Desktop/cs32/p4/p4/mmmo.txt");
     
-//    Movie* m = mdb.get_movie_from_id("ID38613");
-//    cout << m->get_title() << endl;
-    
-    vector<Movie*> dd = mdb.get_movies_with_actor("Perry Miller Adato");
-    for (int i=0; i<dd.size(); i++){
-        cout << dd[i]->get_title() << endl;
+    User* user = udb.get_user_from_email("AndrA34840@juno.com");
+
+    if (user!=nullptr){
+        cout << user->get_full_name() << endl;
+        for (int i=0; i<user->get_watch_history().size(); i++){
+            cout << user->get_watch_history()[i] << endl;
+        }
     }
-    
-    
-//    User* user = udb.get_user_from_email("AbFow2483@charter.net");
-//    cout << user->get_full_name() << endl;
-//    for (int i=0; i<user->get_watch_history().size(); i++){
-//        cout << user->get_watch_history()[i] << endl;
-//    }
-    
+//    
     
     
     
@@ -91,14 +98,18 @@ int main()
 //    tmap.insert(3, "adcwceo");
 //    tmap.insert(2, "fewf");
 //
-//
-//    tmap.find(2);
-//    TreeMultimap<int, string> :: Iterator it = tmap.find(3);
+//    tmap.printTree();
 //
 //
+//    TreeMultimap<int, string> :: Iterator it = tmap.find(2);
 //
+//    cout << it.is_valid() << endl;
+////
+////
+////
 //    while (it.is_valid()){
 //        cout << it.get_value()<<endl;
+////        it.get_value();
 //        it.advance();
 //    }
 ////

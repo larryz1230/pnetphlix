@@ -1,146 +1,74 @@
-#ifndef TREEMULTIMAP_INCLUDED
-#define TREEMULTIMAP_INCLUDED
+
+#ifndef TREE_INCLUDED
+#define TREE_INCLUDED
 
 #include <iostream>
+#include <vector>
 
 template <typename KeyType, typename ValueType>
 class TreeMultimap
 {
-  public:
+    
+private:
     
     struct Node
     {
         Node* left;
         Node* right;
-
-        KeyType key;
-        ValueType val;
         
-        Node(){
+        KeyType key;
+        std::vector<ValueType> val;
+        
+        Node(KeyType m_key, ValueType m_val){
+            key = m_key;
+            val.push_back(m_val);
             left = nullptr;
             right = nullptr;
         }
     };
     
-    
-    class Iterator
-    {
-      public:
-        Iterator()
-        {
-            // Replace this line with correct code.
-            curr = 0;
-        }
-        
-        Iterator(std::vector<Node*> v){
-            for (int i = 0; i<v.size(); i++){
-                itvec.push_back(v[i]);
-            }
-            curr = 0;
-        }
-
-        ValueType& get_value() const
-        {
-            if (!is_valid()){
-                std::cout << "not defined" << std::endl;
-//                return NULL;
-            }
-            return itvec[curr]->val;  // Replace this line with correct code.
-        }
-
-        bool is_valid() const
-        {
-            return curr<itvec.size();  // Replace this line with correct code.
-        }
-
-        void advance()
-        {
-            // Replace this line with correct code.
-            curr++;
-        }
-        
-      private:
-        std::vector<Node*> itvec;
-        int curr;
-    };
-
-    TreeMultimap()
-    {
-        n = nullptr;
-    }
-
-    ~TreeMultimap()
-    {
-        destructorHelper(n);
-    }
-    
-    void printTree (){
-        printTree(n);
-    }
-    
-    void printTree ( const Node* p){
-        if (p!=nullptr){
-            printTree (p->left);
-            std::cout << p->val << std::endl;
-            printTree (p->right);
-        }
-    }
-
-    void insert(const KeyType& key, const ValueType& value)
-    {
-        insert (n, key, value);
-    }
-    
-    
-
-    Iterator find(const KeyType& key) const
-    {
-        std::vector<Node*>v;
-        findHelper(v, key, n);  // Replace this line with correct code.
-        return Iterator(v);
-    }
-    
-
-private:
-    
     Node* n;
+    
     
     void insert (Node *p, const KeyType& key, const ValueType& value){
         if (n==nullptr){
-            n = new Node;
-            n->key = key;
-            n->val = value;
+            n = new Node(key, value);
             return;
         }
-
+        
         if (key>p->key){
             if (p->right == nullptr){
-                p->right = new Node;
-                p->right->key = key;
-                p->right->val = value;
+                p->right = new Node(key, value);
             } else {
                 insert (p->right, key, value);
             }
         }
-        else if (key <= p->key){
+        else if (key < p->key){
             if (p->left==nullptr){
-                p->left = new Node;
-                p->left->key = key;
-                p->left->val = value;
+                p->left = new Node(key, value);
             } else {
                 insert (p->left, key, value);
             }
         }
+        
+        else{
+            p->val.push_back(value);
+        }
     }
     
-    void findHelper (std::vector <Node*>& v, const KeyType& key, Node* p) const{
+    Node* findHelper (const KeyType& key, Node* p) const{
         if (p!=nullptr){
-            findHelper(v, key, p->left);
+//            std::cout << p->key << std::endl;
+            
             if (p->key==key){
-                v.push_back(p);
+                return p;
+            } else if (p->key>key){
+                return findHelper(key, p->left);;
+            } else {
+                return findHelper(key, p->right);
             }
-            findHelper(v, key, p->right);
         }
+        return nullptr;
     }
     
     void destructorHelper(Node* n){
@@ -150,7 +78,93 @@ private:
             delete n;
         }
     }
-
+    
+    
+    
+    
+    
+public:
+    
+    class Iterator
+    {
+    public:
+        Iterator()
+        {
+            // Replace this line with correct code.
+            curr = 0;
+        }
+        
+        Iterator(Node* v){
+            if (v!=nullptr){
+                for (int i = 0; i<v->val.size(); i++){
+                    itvec.push_back(&v->val[i]);
+                }
+            }
+            curr = 0;
+            
+        }
+        
+        ValueType& get_value() const
+        {
+            if (!is_valid()){
+                std::cout << "not defined" << std::endl;
+                //                return NULL;
+            }
+            return *itvec[curr];  // Replace this line with correct code.
+            
+        }
+        
+        bool is_valid() const
+        {
+            return curr<itvec.size();
+        }
+        
+        void advance()
+        {
+            curr++;
+        }
+        
+    private:
+        std::vector<ValueType*> itvec;
+        int curr;
+    };
+    
+    TreeMultimap()
+    {
+        n = nullptr;
+    }
+    
+    ~TreeMultimap()
+    {
+        destructorHelper(n);
+    }
+    
+    void printTree (){
+        printTree(n);
+    }
+    
+    void printTree (const Node* p){
+        if (p!=nullptr){
+            printTree (p->left);
+            for (int i=0; i<p->val.size(); i++){
+                std::cout << p->val.at(i) << std::endl;
+            }
+            printTree (p->right);
+        }
+    }
+    
+    void insert(const KeyType& key, const ValueType& value)
+    {
+        insert(n, key, value);
+    }
+    
+    
+    
+    Iterator find(const KeyType& key) const
+    {   // Replace this line with correct code.
+        return Iterator(findHelper(key, n));
+    }
+    
 };
 
-#endif // TREEMULTIMAP_INCLUDED
+#endif // TREE_INCLUDED

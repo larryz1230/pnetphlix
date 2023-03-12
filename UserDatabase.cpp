@@ -4,8 +4,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include <fstream> 
-
+#include <fstream>
 
 using namespace std;
 
@@ -33,7 +32,7 @@ bool UserDatabase::load(const string& filename)
         getline(myFile, name);
         getline(myFile, email);
         myFile >> numids;
-        myFile.ignore(100000, '\n');
+        myFile.ignore(10000, '\n');
         for (int i=0; i<numids; i++){
             getline(myFile, text);
             u_history.push_back(text);

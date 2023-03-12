@@ -6,7 +6,6 @@
 #include <iostream>
 #include <fstream>
 
-#include "treemm.h"
 using namespace std;
 
 
