@@ -9,6 +9,15 @@
 using namespace std;
 
 
+string tolower (string s){
+    for (int i=0; i<s.length(); i++){
+        if (isalpha(s[i])){
+            s[i] = tolower(s[i]);
+        }
+    }
+    return s;
+}
+
 void seperate(string s, vector<string>&v){
     while (s.find(',')>0 && s.find(',')<s.size()){
         int temp  = s.find(',');
@@ -58,15 +67,15 @@ bool MovieDatabase::load(const string& filename)
         seperate(temp_g, m_genres);
         
         Movie *m = new Movie(id, name, release, m_directors, m_actors, m_genres, rating);
-        iddb.insert(id, m);
+        iddb.insert(tolower(id), m);
         for (string d: m_directors){
-            directordb.insert(d, m);
+            directordb.insert(tolower(d), m);
         }
         for (string a: m_actors){
-            actordb.insert(a, m);
+            actordb.insert(tolower(a), m);
         }
         for (string g: m_genres){
-            genredb.insert(g, m);
+            genredb.insert(tolower(g), m);
         }
         
         getline(myFile, name);
@@ -79,8 +88,8 @@ bool MovieDatabase::load(const string& filename)
 
 Movie* MovieDatabase::get_movie_from_id(const string& id) const
 {
-    if (iddb.find(id).is_valid()){
-        return iddb.find(id).get_value();
+    if (iddb.find(tolower(id)).is_valid()){
+        return iddb.find(tolower(id)).get_value();
     }
     else {
         return nullptr;
@@ -90,7 +99,7 @@ Movie* MovieDatabase::get_movie_from_id(const string& id) const
 vector<Movie*> MovieDatabase::get_movies_with_director(const string& director) const
 {
     vector <Movie*> v;
-    TreeMultimap<string, Movie*>::Iterator it = directordb.find(director);
+    TreeMultimap<string, Movie*>::Iterator it = directordb.find(tolower(director));
     if (it.is_valid()){
         while (it.is_valid()){
             v.push_back(it.get_value());
@@ -103,7 +112,7 @@ vector<Movie*> MovieDatabase::get_movies_with_director(const string& director) c
 vector<Movie*> MovieDatabase::get_movies_with_actor(const string& actor) const
 {
     vector <Movie*> v;
-    TreeMultimap<string, Movie*>::Iterator it = actordb.find(actor);
+    TreeMultimap<string, Movie*>::Iterator it = actordb.find(tolower(actor));
     if (it.is_valid()){
         while (it.is_valid()){
             v.push_back(it.get_value());
@@ -116,7 +125,7 @@ vector<Movie*> MovieDatabase::get_movies_with_actor(const string& actor) const
 vector<Movie*> MovieDatabase::get_movies_with_genre(const string& genre) const
 {
     vector <Movie*> v;
-    TreeMultimap<string, Movie*>::Iterator it = genredb.find(genre);
+    TreeMultimap<string, Movie*>::Iterator it = genredb.find(tolower(genre));
     if (it.is_valid()){
         while (it.is_valid()){
             v.push_back(it.get_value());
