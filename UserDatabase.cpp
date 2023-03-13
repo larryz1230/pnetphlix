@@ -26,13 +26,16 @@ bool UserDatabase::load(const string& filename)
     string text;
     string name;
     string email;
+    string num;
     int numids;
-    vector<string> u_history;
     while (myFile) {
+        vector<string> u_history;
         getline(myFile, name);
         getline(myFile, email);
-        myFile >> numids;
-        myFile.ignore(10000, '\n');
+//        myFile >> numids;
+//        myFile.ignore(10000, '\n');
+        getline(myFile, num);
+        numids = stoi(num);
         for (int i=0; i<numids; i++){
             getline(myFile, text);
             u_history.push_back(text);

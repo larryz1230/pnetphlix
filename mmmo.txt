@@ -1,3 +1,51 @@
+ID10782
+Santosh Subramaniam
+2008
+M. Raja
+Jayam Ravi,Genelia D'Souza,Prakash Raj,Sayaji Shinde,Geetha
+Action,Comedy,Romance
+5
+
+ID25779
+The Carpet of Horror
+1962
+Harald Reinl
+Joachim Fuchsberger,Karin Dor,Werner Peters,Eleonora Rossi Drago,Carl Lange
+Crime,Horror
+2.25
+
+ID35763
+Monkey Love Experiments
+2014
+Will Anderson
+Tobias Feltus,Oliver Henderson
+Animation,Drama
+4
+
+ID02298
+The Arbalest
+2016
+Adam Pinney
+Mike Brune,Tallie Medel,Matthew Stanton,Felice Heather Monteith,Jon Briddell
+Drama
+3.5
+
+ID39216
+No Safe Spaces
+2019
+Justin Folk
+Dennis Prager,Adam Carolla,Ben Shapiro,Jordan B. Peterson,Dave Rubin
+Documentary
+3.44444
+
+ID19214
+The Queen of Trees
+2005
+Mark Deeble
+Ian Holm
+Documentary,Drama
+4.25
+
 ID00910
 Paris The Luminous Years
 2010
@@ -9,7 +57,1168 @@ Documentary
 ID38613
 Maria, Mirabella
 1981
-Perry Miller Adato
+Ion Popescu-Gopo
 Gilda Manolescu,Medeea Marinescu,Ion Popescu-Gopo,Ingrid Celia,Lyudmila Gnilova
 Animation,Children,Comedy
 2
+
+ID31049
+Klaus
+2019
+Sergio Pablos
+Rashida Jones,J.K. Simmons,Joan Cusack,Jason Schwartzman,Tucker Meek
+Adventure,Animation,Children,Comedy
+3.85808
+
+ID38033
+The Devil's Partner
+1961
+Charles R. Rondeau
+Edgar Buchanan,Jean Allison,Richard Crane,Spencer Carlisle,Byron Foulger
+Horror
+2.5
+
+ID21608
+Trackman
+2007
+Igor Shavlak
+Dmitriy Orlov,Svetlana Metkina,Yuliya Mikhailova,Igor Shavlak,Aleksandr Vysokovskiy
+Horror,Thriller
+1.83333
+
+ID13832
+Next
+1990
+Barry Purves
+Roger Rees,Barry Purves
+Animation
+3.25
+
+ID15176
+The Life and Times of Frida Kahlo
+2005
+Amy Stechler
+Rita Moreno,Lila Downs,Leon Trotsky
+Documentary
+4
+
+ID01979
+First Man on the Moon
+2012
+Christopher Riley
+Corey Johnson,Neil Armstrong,Michael Collins,Buzz Aldrin,Dave Scott
+Documentary
+4
+
+ID06640
+Marvel Renaissance
+2014
+Philippe Guedj
+Avi Arad,Tom DeSanto,Louis Leterrier,Mark Millar,Jimmy Palmiotti
+Documentary
+3
+
+ID06638
+Winston Churchill: A Giant in the Century
+2014
+David Korn-Brzoza
+Vincent Lindon,Winston Churchill,Clementine Churchill,Diana Churchill,Mary Churchill
+Documentary,War
+4.5
+
+ID24188
+Emu Runner
+2018
+Imogen Thomas
+Rhae-Kye Waites,Wayne Blair,Georgia Blizzard
+Children,Drama
+2.5
+
+ID39434
+Pressure Point
+1997
+David Giancola
+Don Mogavero,Steve Railsback,Larry Linville,Linda Ljoka,Matthew Bruch
+Action,Thriller
+2.75
+
+ID34361
+Picture a Perfect Christmas
+2019
+Paul Ziller
+Merritt Patterson,Jon Cor,Kwesi Ameyaw,Anita Brown,Terence Kelly
+Romance
+2.44444
+
+ID32749
+Hell House LLC III: Lake of Fire
+2019
+Stephen Cognetti
+Gabriel Chytry,Elizabeth Vermilyea,Sam Kazzi,Theodore Bouloukos,Brian David Tracy
+Horror
+3.02632
+
+ID13552
+Judgment Day: The John List Story
+1993
+Bobby Roth
+Robert Blake,Beverly D'Angelo,David Caruso,Melinda Dillon,Alice Krige
+Crime,Drama
+4
+
+ID24384
+Let Her Cry
+2016
+Asoka Handagama
+Swarna Mallawarachchi,Dhritiman Chatterjee
+Drama
+2.5
+
+ID06930
+Midway
+2019
+Roland Emmerich
+Ed Skrein,Patrick Wilson,Luke Evans,Aaron Eckhart,Nick Jonas
+Action,Drama,War
+3.35057
+
+ID37013
+Let It Snow
+2019
+Luke Snellin
+Shameik Moore,Kiernan Shipka,Isabela Moner,Odeya Rush,Joan Cusack
+Comedy,Romance
+2.92453
+
+ID20887
+Seth Meyers: Lobby Baby
+2019
+Neal Brennan
+Seth Meyers
+Comedy
+3.45238
+
+ID09690
+Tjorven and Mysak
+1966
+Olle Hellbom
+Maria Johansson,Stephen Lindholm,Torsten Lilliecrona,Louise Edlind,Torsten Wahlund
+Children
+4.5
+
+ID00847
+Pippi Longstocking
+1997
+Michael Schaack
+Melissa Altro,Catherine O'Hara,Carole Pope,Dave Thomas
+Adventure,Animation,Children,Comedy
+2.66667
+
+ID22262
+Chinatown Squad
+1935
+Murray Roth
+Lyle Talbot,Valerie Hobson,Hugh O'Connell,Andy Devine,Leslie Fenton
+Action,Crime
+4
+
+ID36770
+The Man Without Gravity
+2019
+Marco Bonfanti
+Elio Germano,Michela Cescon,Elena Cotta,Silvia D'Amico Bendico,Vincent Scarito
+Fantasy
+2.83333
+
+ID39375
+Hockey Night
+1984
+Paul Shapiro
+Megan Follows,Rick Moranis,Gail Youngs,Henry Ramer,Sean McCann
+Drama
+3
+
+ID32556
+The World According to Xi Jinping
+2018
+Sophie Lepault
+Xi Jinping
+Documentary
+4.5
+
+ID35162
+The Kingmaker
+2019
+Lauren Greenfield
+Imelda Marcos
+Documentary
+3.46667
+
+ID14362
+Dennis Miller: Fake News, Real Jokes
+2018
+Brian Volk-Weiss
+Dennis Miller
+Comedy,Documentary
+1.33333
+
+ID01034
+American Son
+2019
+Kenny Leon
+Kerry Washington,Steven Pasquale,Jeremy Jordan,Eugene Lee
+Drama
+3
+
+ID09826
+Kaithi
+2019
+Lokesh Kanagaraj
+Karthi,Narain,KPY Dheena,George Mariyan,Ramana
+Action,Thriller
+4.14286
+
+ID37170
+Kullanari Koottam
+2011
+Sri Balaji
+Vishnu Vishal,Remya Nambeesan,Soori,Appukutty,Pandi
+Romance
+3
+
+ID03086
+Jallikattu
+2019
+Lijo Jose Pellissery
+Antony Varghese,Chemban Vinod Jose,Sabumon Abdusamad,Santhy Balachandran,Jaffer Idukki
+Action,Crime,Drama,Thriller
+3.08333
+
+ID14750
+Terrifier
+2011
+Damien Leone
+Mike Giannelli,Marie Maser
+Horror
+2
+
+ID25149
+The Elephant Queen
+2019
+Mark Deeble
+Chiwetel Ejiofor
+Documentary
+3.8125
+
+ID32257
+Super 30
+2019
+Vikas Bahl
+Hrithik Roshan,Mrunal Thakur,Veerendra Saxena,Nandish Singh,Pankaj Tripathi
+Drama
+3.17857
+
+ID08532
+American Experience: 1964
+2014
+Stephen Ives
+Oliver Platt
+Documentary
+4
+
+ID06820
+Joshua
+2006
+Travis Betz
+Jim Betz,Jacob Casper,Jesse Casper,John Casper,John Coffman
+Horror
+1.5
+
+ID33385
+Sin Reaper
+2013
+Sebastian Bartolitius
+Helen Mutch,Lance Henriksen,Hazuki Kato,Patrick J. Thomas,Paulina Bachmann
+Horror,Thriller
+0
+
+ID26288
+Why Don't You Just Die!
+2018
+Kirill Sokolov
+Vitaliy Khaev,Alexandr Kuznetsov,Evgeniya Kregzhde,Mikhail Gorevoy,Elena Shevchenko
+Comedy
+3.4
+
+ID31165
+Adopt a Highway
+2019
+Logan Marshall-Green
+Ethan Hawke,Elaine Hendrix,Diane Gaeta,Betty Gabriel,Mo McRae
+Drama
+3.09375
+
+ID27953
+Ella and Friends
+2012
+Taneli Mustonen
+Freja Teijonsalo,Aura Mikkonen,Emilia Paasonen,Artturi Auvinen,Eero Milonoff
+Adventure,Children,Comedy
+4.5
+
+ID37308
+Rolli and the Golden Key
+2013
+Taavi Vartia
+Allu Tuppurainen,Krista Kosonen,Mikko Leppilampi,Jarkko Niemi
+Adventure
+5
+
+ID25599
+Nostalgic Christmas
+2019
+J.B. Sugar
+Brooke D'Orsay,Trevor Donovan,Jenna Weir,Ron Lea,Tara Joshi
+Romance
+4.3
+
+ID39265
+Ein Sommer in Salamanca
+2019
+Michael Keusch
+Susan Hoecke,Patricia Aulitzky,Fernando del Corral,Manuel Cortez,Dagmar Sachse
+Drama
+1.5
+
+ID28136
+1066: A Year to Conquer England
+2017
+Tim Dunn
+Andrew Havill,Adam James,Simon Meacock,Freya Parker,Clive Russell
+Documentary,Drama
+2.83333
+
+ID13019
+Rufus
+2013
+Dave Schultz
+Merritt Patterson,Richard Harmon,Kim Coates,David James Elliott,Kelly Rowan
+Drama
+4
+
+ID26241
+The Invasion of Carol Enders
+1973
+Burt Brinckerhoff
+Meredith Baxter,Charles Aidman,John Karlen,Christopher Connelly,George DiCenzo
+Drama,Horror
+2
+
+ID11696
+The Zone
+2011
+Joe Swanberg
+Kentucker Audley,Kate Lyn Sheil,Sophia Takal,Dustin Guy Defa,Lawrence Michael Levine
+Drama
+2.4
+
+ID36649
+Everything Is Terrible! Presents: The Great Satan
+2017
+Everything Is Terrible!
+Chuck E. Cheese,Gene Simmons,Jim Newberry,Glenn Danzig,Keegan-Michael Key
+Comedy,Fantasy,Horror
+4.375
+
+ID18720
+Cricket on the Hearth
+1967
+Jules Bass
+Danny Thomas,Marlo Thomas,Roddy McDowall
+Animation,Children
+2
+
+ID12168
+Richard III: The King in the Car Park
+2013
+Louise Osmond
+Simon Farnaby
+Documentary
+2.5
+
+ID10963
+Bog
+1979
+Don Keeslar
+Gloria DeHaven,Aldo Ray,Marshall Thompson,Leo Gordon,Glen Voros
+Horror
+1.75
+
+ID23170
+Maniac Farmer
+2019
+Matthew Williams
+Jake Roark,Tyler Caldwell,Jeremy Snead,Kyrk Davis,Hannah Davis
+Comedy,Horror,Thriller
+1.5
+
+ID23594
+Text
+2019
+Klim Shipenko
+Alexander Petrov,Kristina Asmus,Ivan Yankovsky,Sofya Ozerova,Maksim Vinogradov
+Drama,Thriller
+2.9375
+
+ID10222
+Kaappaan
+2019
+K. V. Anand
+Suriya,Mohanlal,Arya,Sayesha Saigal,Samuthirakani
+Action,Drama
+3.16667
+
+ID18859
+Vincent
+2016
+Christophe Van Rompaey
+Spencer Bogaert,Alexandra Lamy,Barbara Sarafian,Geert Van Rampelberg,Emma Reynaert
+Comedy,Drama
+3.5
+
+ID27147
+Clownado
+2019
+Todd Sheets
+Linnea Quigley,Dilynn Fawn Harvey,Eileen Dietz,Millie Milan,Joel D. Wynkoop
+Comedy,Horror
+0.5
+
+ID08268
+Prey
+2019
+Franck Khalfoun
+Logan Miller,Kristine Froseth,Jolene Anderson,Phodiso Dintwe,Jerrica Lai
+Adventure,Horror,Thriller
+2.6
+
+ID12724
+Woman Haters
+1934
+Archie Gottler
+Moe Howard,Larry Fine,Curly Howard,Marjorie White,Walter Brennan
+Comedy
+2
+
+ID07722
+Alien Outlaw
+1985
+Phil Smoot
+Stephen Winegard,Kimberly Mauldin,Stuart Watson,Sunset Carson,Kari Anderson
+Comedy,Horror,Mystery,Sci-Fi,Western
+3
+
+ID02978
+The Useless Girl
+1982
+Dinara Asanova
+Olga Mashnaya,Mikhail Gluzskiy,Lidiya Fedoseyeva-Shukshina,Mariya Vinogradova,Aleksandr Demyanenko
+Children,Drama
+2.5
+
+ID29885
+Black and Blue
+2019
+Deon Taylor
+Naomie Harris,Frank Grillo,Mike Colter,Reid Scott,Tyrese Gibson
+Action,Crime,Drama
+3.21186
+
+ID19370
+Freeze Die Come to Life
+1990
+Vitali Kanevsky
+Dinara Drukarova,Pavel Nazarov,Elena Popova,Valeri Ivchenko,Vladimir Ivanov
+Drama
+2.7
+
+ID24185
+Chahar Changooli
+2008
+Saeed Soheili
+Reza Shafiei Jam,Javad Razavian,Bahareh Rahnama,Mehran Rajabi
+Comedy
+0.833333
+
+ID35018
+Gasht-e 2
+2017
+Saeed Soheili
+Hamid Farokhnezhad,Poulad Kimiayi,Saed Soheili,Omid Roohani,Tarlan Parvaneh
+Comedy
+1.25
+
+ID00788
+The Relative Worlds
+2019
+Yuuhei Sakuragi
+Yuki Kaji,Maaya Uchida,Nakajima Yoshiki,Sayaka Senbongi,Aoi Yuki
+Animation,Drama,Romance
+3
+
+ID27105
+Classic Albums: Paul Simon - Graceland
+1997
+Jeremy Marre
+Paul Simon
+Documentary
+3.5
+
+ID38746
+The Donner Party
+1992
+Ric Burns
+J.D. Cannon,Timothy Hutton,Gene Jones,Amy Madigan
+Documentary
+3
+
+ID22242
+Coney Island
+1991
+Ric Burns
+Philip Bosco,Al Lewis,Vincent Gardenia,Eli Wallach,Elliot Willensky
+Documentary
+3.75
+
+ID03960
+Another Child
+2019
+Kim Yoon-seok
+Yum Jung-ah,Kim So-jin,Kim Hye-jun,Park Se-jin,Kim Yoon-seok
+Drama
+3.5
+
+ID21263
+Little Miss Dolittle
+2018
+Joachim Masannek
+Malu Leicher,Christoph Maria Herbst,Tom Beck,Aylin Tezel,Meret Becker
+Children,Comedy,Crime,Fantasy
+2
+
+ID39523
+Breakable You
+2017
+Andrew Wagner
+Holly Hunter,Alfred Molina,Cristin Milioti,Tony Shalhoub,Maggie Wagner
+Comedy,Drama
+3.25
+
+ID36291
+Lucero
+2019
+Norberto Ramos del Val
+Claudia Molina,Edgar Calot
+Horror,Mystery
+2.75
+
+ID04655
+Ghost Ship
+2015
+Phontharis Chotkijsadarsopon
+Sean Jindachot,Bhuvadol Vejvongsa,Dharmthai Plangsilp,Pongsatorn Sripinta,Nutcha Jeka
+Horror
+3.75
+
+ID38126
+The Psychotronic Man
+1980
+Jack M. Sell
+Peter Spelson,Chris Carbis,Curt Colbert,Robin Newton
+Horror,Sci-Fi
+2
+
+ID07975
+The Mask of Diijon
+1946
+Lew Landers
+Erich von Stroheim,Jeanne Bates,William Wright,Denise Vernac,Edward Van Sloan
+Drama,Horror,Mystery
+3.16667
+
+ID36809
+Vision Portraits
+2019
+Rodney Evans
+John Dugdale,Rodney Evans,Kayla Hamilton,Ryan Knighton
+Documentary
+4.5
+
+ID00032
+An Officer and a Spy
+2019
+Roman Polanski
+Louis Garrel,Jean Dujardin,Emmanuelle Seigner,Mathieu Amalric,Olivier Gourmet
+Drama
+3.77193
+
+ID23098
+Tell Me Who I Am
+2019
+Ed Perkins
+Alex Lewis,Marcus Lewis,Andrew Caley,Kathleen Rainey,Thomas Mulhurn
+Documentary
+3.56716
+
+ID25159
+In This Gray Place
+2019
+R.D. Womack II
+Aleksander Ristic,Marcus Johns,Angela Nordeng
+Drama,Romance,Thriller
+2.625
+
+ID32269
+Homeward
+2019
+Nariman Aliev
+Akhtem Seitablaiev,Remzi Bilyalov,Dariya Barihashvili,Viktor Zhdanov,Veronika Lukyanenko
+Drama
+3.25
+
+ID09349
+Hard Paint
+2019
+Marcio Reolon
+Shico Menegat,Bruno Fernandes,Guega Peixoto,Sandra Dani,Frederico Vasques
+Drama
+3.125
+
+ID16327
+Lovely Trash
+2019
+Mohsen Amiryoussefi
+Shirin Yazdanbakhsh,Habib Rezaei,Hediyeh Tehrani,Negar Javaherian,Akbar Abdi
+Comedy,Drama,Fantasy,War
+3.375
+
+ID31249
+The First World War From Above
+2010
+Mark Radice
+Fergal Keane
+Documentary
+4
+
+ID26107
+Sweetheart
+2019
+J.D. Dillard
+Kiersey Clemons,Emory Cohen,Hanna Mangan Lawrence,Benedict Samuel,Andrew Crawford
+Horror
+2.94595
+
+ID36971
+The Monkey's Paw
+1948
+Norman Lee
+Milton Rosmer,Megs Jenkins,Michael Martin Harvey,Eric Micklewood,Brenda Hogan
+Thriller
+3
+
+ID09439
+Give Me a Complaints Book
+1964
+Eldar Ryazanov
+Larisa Golubkina,Anatoliy Kuznetsov,Oleg Borisov,Anatoli Papanov,Nikolay Kryuchkov
+Comedy
+1.83333
+
+ID25240
+Classic Albums: Metallica - Metallica
+2001
+Matthew Longfellow
+James Hetfield,Kirk Hammett,Jason Newsted,Lars Ulrich,Michael Kamen
+Documentary
+3
+
+ID20484
+The King
+1930
+James W. Horne
+Harry Langdon,Thelma Todd,Dorothy Granger,Charles McAvoy,Brad Michigan
+Comedy
+2
+
+ID12223
+Virus
+2019
+Aashiq Abu
+Kunchacko Boban,Parvathy Thiruvothu,Tovino Thomas,Sreenath Bhasi,Revathi
+Drama,Thriller
+3.1875
+
+ID39498
+The Boat
+2019
+Winston Azzopardi
+Joe Azzopardi
+Mystery,Thriller
+3.375
+
+ID32906
+Deserted
+2016
+Ashley Avis
+Mischa Barton,Jackson Davis,Jake Busey,Winter Ave Zoli,Trent Ford
+Drama,Thriller
+2.5
+
+ID01132
+Selfie
+2019
+Agostino Ferrente
+Pietro Orlando,Alessandro Antonelli
+Documentary
+3.5
+
+ID35737
+Little Monsters
+2019
+Abe Forsythe
+Lupita Nyong'o,Josh Gad,Alexander England,Nadia Townsend,Charlie Whitley
+Comedy,Horror
+3.16484
+
+ID30610
+Strays
+1991
+John McPherson
+Kathleen Quinlan,Claudia Christian,Timothy Busfield,William Boyett,Eve Brenner
+Horror
+2.5
+
+ID33529
+Lucky Day
+2019
+Roger Avary
+Luke Bracey,Nina Dobrev,Crispin Glover,Michael Madsen,Ella Ryan Quinn
+Action,Crime,Thriller
+2.64286
+
+ID07134
+The Rising Hawk
+2019
+Akhtem Seitablaiev
+Robert Patrick,Tommy Flanagan,Rocky Myers,Poppy Drayton,Alex MacNicoll
+Action,Drama
+3.5
+
+ID32006
+Fractured
+2019
+Brad Anderson
+Sam Worthington,Lily Rabe,Stephen Tobolowsky,Adjoa Andoh,Lauren Cochrane
+Thriller
+3.2027
+
+ID19032
+First Love
+2019
+Takashi Miike
+Becky,Masataka Kubota,Nao Omori,Masaaki Uchino,Shota Sometani
+Action,Comedy,Crime,Romance
+3.59211
+
+ID34944
+Take Me to the Moon
+2017
+Chun-Yi Hsieh
+Vivian Sung,Jasper Liu,Jushe Lee,Chihtian Shih,Aining Yao
+Drama,Romance
+4.5
+
+ID20068
+Classic Albums: Elvis Presley - Elvis Presley
+2001
+Jeremy Marre
+Elvis Presley,Dixie Locke Emmons,Peter Guralnick,Ernst Jorgensen,B.B. King
+Documentary
+4
+
+ID05685
+The Paradise Virus
+2003
+Brian Trenchard-Smith
+Lorenzo Lamas,Melody Thomas Scott,Ralf Moeller,David Millbern,Kristen Honey
+Action,Thriller
+2
+
+ID18439
+Tamizh Padam 2
+2018
+C. S. Amudhan
+Shiva,Iswarya Menon,Sathish Muthukrishnan,Disha Pandey,Nizhalgal Ravi
+Comedy
+3.25
+
+ID16534
+Thamizh Padam
+2010
+C. S. Amudhan
+Shiva,Disha Pandey,M. S. Bhaskar,Venniradai Moorthy,Manobala
+Comedy
+4
+
+ID07765
+Deon Cole: Cole Hearted
+2019
+Ryan Polito
+Deon Cole
+Comedy
+3.11111
+
+ID15777
+Living Dark: The Story of Ted the Caver
+2017
+David Hunt
+Chris Cleveland,Matthew Alan,Circus-Szalewski,Mark Hayter,Jason Wolf
+Horror
+1.875
+
+ID11277
+Amy Winehouse: Back to Black
+2018
+Jeremy Marre
+Amy Winehouse,Mark Ronson,Salaam Remi
+Documentary
+4.5
+
+ID29376
+Harpoon
+2019
+Rob Grant
+Munro Chambers,Emily Tyra,Christopher Gray
+Comedy,Drama,Thriller
+3.18182
+
+ID14002
+The Lost Gods of Easter Island
+2000
+Kate Broome
+David Attenborough
+Documentary
+4
+
+ID23119
+Good Times
+1967
+William Friedkin
+Sonny Bono,Cher,George Sanders,Norman Alden,Larry Duran
+Comedy,Western
+0.5
+
+ID20042
+American Exorcism
+2017
+Tripp Weathers
+Michael Filipowich,Braxton Davis,William McKinney,Jessica Morris,Jennifer Lee Wiggins
+Horror
+1.5
+
+ID12786
+Ravenswood
+2017
+Jon Cohen
+Madeline Marie Dona,Adam Horner,Shane Savage,Isabel Dickson,Jock Campbell
+Horror,Thriller
+3
+
+ID20817
+Perfect Plan
+2010
+Tristan Dubois
+Emily Rose,Lucas Bryant,Cristina Rosato,Jonathan Watton,Nicole Leroux
+Thriller
+3
+
+ID32898
+Collider
+2018
+Justin Lewis
+Christine Mascolo,Jude Moran,Conner Greenhalgh,Heath C. Heine
+Sci-Fi
+3
+
+ID32626
+The Merchant of Venice
+2001
+Trevor Nunn
+Henry Goodman,David Bamber,Peter de Jersey,Derbhle Crotty,Alexander Hanson
+Drama
+5
+
+ID17845
+A Girl Named Sooner
+1975
+Delbert Mann
+Lee Remick,Richard Crenna,Don Murray,Anne Francis,Cloris Leachman
+Drama
+4.5
+
+ID02061
+The JK Years: A Political Trajectory
+1980
+Silvio Tendler
+Juscelino Kubitschek,Tancredo Neves,Renato Archer,Othon Bastos
+Documentary
+3.5
+
+ID29096
+Poinsettias for Christmas
+2018
+Christie Will
+Bethany Joy Lenz,Sharon Lawrence,John Schneider,Lauren London,Marcus Rosner
+Romance
+3.8
+
+ID13656
+The Ultimate Legacy
+2015
+Joanne Hock
+Raquel Welch,Doug Jones,Brian Dennehy,Lee Meriwether,Bill Cobbs
+Adventure,Comedy,Drama
+5
+
+ID01015
+Life Like
+2019
+Josh Janowicz
+Drew Van Acker,Addison Timlin,James D'Arcy,Steven Strait,Mark Famiglietti
+Sci-Fi,Thriller
+2.75
+
+ID17755
+Episode 50
+2011
+Joe Smalley
+Josh Folan,Natalie Wetta,Keithen Hergott,Eleanor Wilson,Justin Brutico
+Horror,Mystery,Thriller
+2.33333
+
+ID32211
+Zonjusha
+2016
+Genc Berisha
+Armend Baloku,Besart Sllamniku,Muhamed Arifi,Ylber Bardhi,Dukagjin Podrimaj
+Comedy,Crime
+3
+
+ID10491
+Jay and Silent Bob Reboot
+2019
+Kevin Smith
+Jason Mewes,Kevin Smith,Brian O'Halloran,Jason Lee,Shannon Elizabeth
+Comedy
+2.74074
+
+ID15324
+The 1st
+2018
+Mark Waites
+Steve Oram,Morgan Watkins,Cariad Lloyd,Simon Greenall,AG. Longhurst
+Comedy
+4
+
+ID39011
+Smile
+2009
+Francesco Gasperoni
+Armand Assante,Giorgia Massetti,Harriet MacMasters-Green,Antonio Cupo,Manuela Zanier
+Horror,Thriller
+1.5
+
+ID38035
+The Other Side
+2014
+Raymond Mongelli III
+Chad Conley,Danielle Lozeau,Christine Starkey,Joe Fishel,Benjamin Sheeler
+Drama,Horror,Thriller
+2
+
+ID14727
+VS.
+2018
+Ed Lilly
+Ruth Sheen,Fola Evans-Akingbola,Nicholas Pinnock,Joivan Wade,Emily Taaffe
+Drama
+4
+
+ID21872
+The Triangle
+2016
+Adam Stilwell
+Andrew Rizzo,Lee Rizzo,Brick Patrick,Nathaniel Peterson,Ciara Rose Griffin
+Horror,Mystery
+3
+
+ID03901
+The Prince and the Pauper
+1972
+Vadim Gauzner
+Viktor Smirnov,Yuri Astafyev,Ivan Krasko,Maya Bulgakova,Marina Neyolova
+Adventure,Children,Comedy
+2
+
+ID34472
+Meditation on Violence
+1949
+Maya Deren
+Chao Li Chi
+Documentary
+2.75
+
+ID04530
+Nadia
+1984
+Alan Cooke
+Jonathan Banks,Talia Balsam,Carrie Snodgress,Leslie Weiner,Johann Carlo
+Drama
+2.5
+
+ID31503
+Soni
+2019
+Ivan Ayr
+Geetika Vidya Ohlyan,Saloni Batra,Vikas Shukla,Himanshu Kohli
+Crime,Drama
+3.625
+
+ID08893
+The Trap
+2014
+Jayaraj
+Ashanth K. Shah,Kumarakom Vasudevan,Shine Tom Chacko,Hafis Muhammed,Sabita Jayaraj
+Drama
+4.25
+
+ID39254
+Sarbjit
+2016
+Omung Kumar
+Aishwarya Rai Bachchan,Randeep Hooda,Richa Chaddha,Darshan Kumar
+Drama
+3.75
+
+ID32231
+The Calamari Wrestler
+2004
+Minoru Kawasaki
+Osamu Nishimura,Akira Nogami,Miho Shiraishi,Kana Ishida,Nobuo Kameko
+Comedy
+2.375
+
+ID13990
+The Death and Return of Superman
+2019
+Sam Liu
+Jerry O'Connell,Rebecca Romijn,Rainn Wilson,Rosario Dawson,Nathan Fillion
+Action,Adventure,Animation
+3.15217
+
+ID01955
+The Young Cannibals
+2019
+Kris Carr
+Megan Purvis,Samuel Freeman,Hannah Louise Howell,Benjamin Sarpong-Broni,Kim Spearman
+Horror,Thriller
+2.5
+
+ID17875
+10 Minutes Gone
+2019
+Brian A. Miller
+Bruce Willis,Michael Chiklis,Meadow Williams,Kyle Schmid,Texas Battle
+Action,Crime,Mystery,Thriller
+2.42308
+
+ID22535
+Brave New World
+1980
+Burt Brinckerhoff
+Julie Cobb,Bud Cort,Keir Dullea,Ron O'Neal,Marcia Strassman
+Sci-Fi
+3.08333
+
+ID12526
+Frozen II
+2019
+Chris Buck
+Kristen Bell,Idina Menzel,Jonathan Groff,Josh Gad,Sterling K. Brown
+Adventure,Animation,Children,Comedy,Fantasy
+3.23141
+
+ID09707
+An Accidental Studio
+2019
+Bill Jones
+George Harrison,Richard E. Grant,Michael Palin,Bob Hoskins,Helen Mirren
+Documentary
+3.5
+
+ID04067
+Untouchable
+2019
+Ursula Macfarlane
+Rosanna Arquette,Hope Exiner D'Amore,Paz de la Huerta,Caitlin Dulany,Ronan Farrow
+Documentary
+2.95
+
+ID16483
+Charlie's Angels
+2019
+Elizabeth Banks
+Kristen Stewart,Naomi Scott,Ella Balinska,Elizabeth Banks,Patrick Stewart
+Action,Adventure,Comedy
+2.52667
+
+ID06843
+Matthias & Maxime
+2019
+Xavier Dolan
+Gabriel D'Almeida Freitas,Xavier Dolan,Pier-Luc Funk,Samuel Gauthier,Antoine Pilon
+Drama
+3.46875
+
+ID11233
+Tehran: City of Love
+2018
+Ali Jaberansari
+Forough Ghajabagli,Mehdi Saki,Behnaz Jafari,Amir Hessam Bakhtiari
+Romance
+4
+
+ID34614
+Samurai Marathon
+2019
+Bernard Rose
+Takeru Satoh,Nana Komatsu,Mirai Moriyama,Shota Sometani,Munetaka Aoki
+Action,Drama
+3.75
+
+ID13462
+Classic Albums: Queen - A Night at the Opera
+2006
+Matthew Longfellow
+Freddie Mercury,Roger Taylor,John Deacon,Brian May
+Documentary
+3.625
+
+ID37105
+Port Authority
+2019
+Danielle Lessovitz
+Fionn Whitehead,Leyna Bloom,McCaul Lombardi,Jari Jones,Devon Carpenter
+Drama
+3.5
+

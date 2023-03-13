@@ -36,9 +36,15 @@ private:
             return;
         }
         
+        if (key==p->key){
+            p->val.push_back(value);
+            return;
+        }
+        
         if (key>p->key){
             if (p->right == nullptr){
                 p->right = new Node(key, value);
+                return;
             } else {
                 insert (p->right, key, value);
             }
@@ -46,14 +52,12 @@ private:
         else if (key < p->key){
             if (p->left==nullptr){
                 p->left = new Node(key, value);
+                return;
             } else {
                 insert (p->left, key, value);
             }
         }
         
-        else{
-            p->val.push_back(value);
-        }
     }
     
     Node* findHelper (const KeyType& key, Node* p) const{

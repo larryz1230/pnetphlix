@@ -3,27 +3,14 @@
 #include "User.h"
 #include "Movie.h"
 #include <iostream>
+#include <chrono>
 #include <string>
 #include "treemm.h"
 using namespace std;
 
-//////////////////////////i/////////////////////////////////////////////////////
-//
-// You are free to do whatever you want with this file, since you won't
-// be turning it in.  Presumably, you will make changes to help you test
-// your classes.  For example, you might try to implement only some User
-// member functions to start out with, and so replace our main routine with
-// one that simply creates a User and verifies that the member functions you
-// implemented work correctly.
-//
-//////////////////////////i/////////////////////////////////////////////////////
 
+auto start = chrono::steady_clock::now();
 
-  // If your program is having trouble finding these files. replace the
-  // string literals with full path names to the files.  Also, for test
-  // purposes, you may want to create some small, simple user and movie
-  // data files to makde debuggiing easier, so you can replace the string
-  // literals with the names of those smaller files.
 
 const string USER_DATAFILE  = "/Users/larryzhi/Desktop/cs32/p4/file.txt";
 
@@ -60,31 +47,31 @@ int main()
 {
 
     
-    
-    UserDatabase udb;
-       udb.load(USER_DATAFILE);
+//
+//    UserDatabase udb;
+//       udb.load(USER_DATAFILE);
 
-//       MovieDatabase mdb;
-//       mdb.load("/Users/larryzhi/Desktop/cs32/p4/p4/mmmo.txt");
+       MovieDatabase mdb;
+       mdb.load("/Users/larryzhi/Desktop/cs32/p4/p4/mmmo.txt");
 //
-//       Movie* m = mdb.get_movie_from_id("ID38613");
-//       cout << m->get_title() << endl;
-//
+       Movie* m = mdb.get_movie_from_id("ID38613");
+       cout << m->get_title() << endl;
+
 //       vector<Movie*> dd = mdb.get_movies_with_director("Perry Miller Adato");
 //       for (int i=0; i<dd.size(); i++){
 //           cout << dd[i]->get_title() << endl;
 //       }
-//
-    
-    
-    User* user = udb.get_user_from_email("AndrA34840@juno.com");
 
-    if (user!=nullptr){
-        cout << user->get_full_name() << endl;
-        for (int i=0; i<user->get_watch_history().size(); i++){
-            cout << user->get_watch_history()[i] << endl;
-        }
-    }
+    
+    
+//    User* user = udb.get_user_from_email("AndrA34840@juno.com");
+//
+//    if (user!=nullptr){
+//        cout << user->get_full_name() << endl;
+//        for (int i=0; i<user->get_watch_history().size(); i++){
+//            cout << user->get_watch_history()[i] << endl;
+//        }
+//    }
 //    
     
     
@@ -115,4 +102,10 @@ int main()
 ////
 //    cout << "_________________" << endl;
 //    tmap.printTree();
+    
+    auto stop = chrono::steady_clock::now();
+
+    cout << "Took " << (chrono::duration_cast<chrono::milliseconds>(stop - start).count()) << "ms" << endl;
+    
+    
 }
