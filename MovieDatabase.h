@@ -20,13 +20,13 @@ class MovieDatabase
     std::vector<Movie*> get_movies_with_genre(const std::string& genre) const;
 
   private:
-    TreeMultimap<std::string, Movie*> actordb;
-    TreeMultimap<std::string, Movie*> directordb;
-    TreeMultimap<std::string, Movie*> genredb;
-    TreeMultimap<std::string, Movie*> iddb;
+    TreeMultimap<std::string, Movie*> actordb;      //treemap to search by actor key
+    TreeMultimap<std::string, Movie*> directordb;   //treemap to search by director key
+    TreeMultimap<std::string, Movie*> genredb;  //treemap to search by genre key
+    TreeMultimap<std::string, Movie*> iddb; //treemap to search by id key, returns only 1
     
-    std::vector<Movie*> todeletem;
-    bool opened;
+    std::vector<Movie*> todeletem;      //deletion vector for destructor
+    bool opened;      //check if file has been opened
 };
 
 #endif // MOVIEDATABASE_INCLUDED

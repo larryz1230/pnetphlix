@@ -11,12 +11,11 @@ using namespace std;
 UserDatabase::UserDatabase()
 {
     opened = false;
-    // Replace this line with correct code.
 }
 
 UserDatabase::~UserDatabase()
 {
-    for (User* u : todeleteu){
+    for (User* u : todeleteu){      //for each pointer created, delete
         delete u;
     }
 }
@@ -35,12 +34,10 @@ bool UserDatabase::load(const string& filename)
     string email;
     string num;
     int numids;
-    while (myFile) {
+    while (myFile) {            //loop through and store data in new User objects
         vector<string> u_history;
         getline(myFile, name);
         getline(myFile, email);
-//        myFile >> numids;
-//        myFile.ignore(10000, '\n');
         getline(myFile, num);
         numids = stoi(num);
         for (int i=0; i<numids; i++){
@@ -48,20 +45,20 @@ bool UserDatabase::load(const string& filename)
             u_history.push_back(text);
         }
         getline(myFile, text);
-        User* temp = new User(name, email, u_history);
-        userdb.insert(email, temp);
-        todeleteu.push_back(temp);
+        User* temp = new User(name, email, u_history);      //create new User object from info
+        userdb.insert(email, temp);     //insert object into treemultimap
+        todeleteu.push_back(temp);      //add to deletion vector
     }
     myFile.close();
     opened = true;
     return true;  // Replace this line with correct code.
 }
 
-User* UserDatabase::get_user_from_email(const string& email) const
+User* UserDatabase::get_user_from_email(const string& email) const      //returns user given an email key
 {
-    if (userdb.find(email).is_valid()){
+    if (userdb.find(email).is_valid()){     //calls multimaps function, get iterator
         return userdb.find(email).get_value();
-    }  // Replace this line with correct code.
+    }  
     else {
         return nullptr;
     }

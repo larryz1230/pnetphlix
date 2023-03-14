@@ -4,6 +4,7 @@
 #include <vector>
 using namespace std;
 
+//constructor
 User::User(const string& full_name, const string& email,
            const vector<string>& watch_history)
 {
@@ -12,17 +13,18 @@ User::User(const string& full_name, const string& email,
     this->watch_history = watch_history;
 }
 
+//accessors
 string User::get_full_name() const
 {
-    return full_name;  // Replace this line with correct code.
+    return full_name;
 }
 
 string User::get_email() const
 {
-    return email;  // Replace this line with correct code.
+    return email;
 }
 
 vector<string> User::get_watch_history() const
 {
-    return watch_history;  // Replace this line with correct code.
+    return watch_history;
 }

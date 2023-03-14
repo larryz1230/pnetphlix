@@ -1,6 +1,5 @@
 #include "MovieDatabase.h"
 #include "Movie.h"
-
 #include <string>
 #include <vector>
 #include <iostream>
@@ -9,7 +8,7 @@
 using namespace std;
 
 
-string tolower (string s){
+string tolower (string s){      //converts string to lowercase
     for (int i=0; i<s.length(); i++){
         if (isalpha(s[i])){
             s[i] = tolower(s[i]);
@@ -18,7 +17,7 @@ string tolower (string s){
     return s;
 }
 
-void seperate(string s, vector<string>&v){
+void seperate(string s, vector<string>&v){      //seperates by comma splice, and adds to vector
     while (s.find(',')>0 && s.find(',')<s.size()){
         int temp  = s.find(',');
         v.push_back(s.substr(0, temp));
@@ -35,7 +34,7 @@ MovieDatabase::MovieDatabase()
 
 MovieDatabase::~MovieDatabase()
 {
-    for (Movie* m : todeletem){
+    for (Movie* m : todeletem){     //for each movie pointer created, delete
         delete m;
     }
 }
@@ -55,8 +54,8 @@ bool MovieDatabase::load(const string& filename)
     string temp_a;
     string temp_g;
     float rating;
-    
-    while (myFile.eof()==0) {
+        
+    while (myFile.eof()==0) {       //get info from file
         vector<string> m_directors;
         vector<string> m_actors;
         vector<string> m_genres;
@@ -73,20 +72,20 @@ bool MovieDatabase::load(const string& filename)
         seperate(temp_a, m_actors);
         seperate(temp_g, m_genres);
         
-        Movie *m = new Movie(id, name, release, m_directors, m_actors, m_genres, rating);
-        todeletem.push_back(m);
-        iddb.insert(tolower(id), m);
+        Movie *m = new Movie(id, name, release, m_directors, m_actors, m_genres, rating);       //create new movie from info
+        todeletem.push_back(m);     //add to delete vector
+        iddb.insert(tolower(id), m);        //insert lowercase in map to make case-insensitive
         for (string d: m_directors){
-            directordb.insert(tolower(d), m);
+            directordb.insert(tolower(d), m);   //insert lowercase in map to make case-insensitive
         }
         for (string a: m_actors){
-            actordb.insert(tolower(a), m);
+            actordb.insert(tolower(a), m);  //insert lowercase in map to make case-insensitive
         }
         for (string g: m_genres){
-            genredb.insert(tolower(g), m);
+            genredb.insert(tolower(g), m);  //insert lowercase in map to make case-insensitive
         }
         
-        getline(myFile, name);
+        getline(myFile, name);      //empty line at the bottom
         
     }
     myFile.close();
@@ -97,7 +96,7 @@ bool MovieDatabase::load(const string& filename)
 Movie* MovieDatabase::get_movie_from_id(const string& id) const
 {
     if (iddb.find(tolower(id)).is_valid()){
-        return iddb.find(tolower(id)).get_value();
+        return iddb.find(tolower(id)).get_value();      //return iterator's get value
     }
     else {
         return nullptr;
@@ -107,17 +106,17 @@ Movie* MovieDatabase::get_movie_from_id(const string& id) const
 vector<Movie*> MovieDatabase::get_movies_with_director(const string& director) const
 {
     vector <Movie*> v;
-    TreeMultimap<string, Movie*>::Iterator it = directordb.find(tolower(director));
+    TreeMultimap<string, Movie*>::Iterator it = directordb.find(tolower(director));     //store results vector
     if (it.is_valid()){
         while (it.is_valid()){
-            v.push_back(it.get_value());
+            v.push_back(it.get_value());        //adds to temp vector
             it.advance();
         }
     }
-    return v;
+    return v;       //returns temp vector
 }
 
-vector<Movie*> MovieDatabase::get_movies_with_actor(const string& actor) const
+vector<Movie*> MovieDatabase::get_movies_with_actor(const string& actor) const      //same, but for actor
 {
     vector <Movie*> v;
     TreeMultimap<string, Movie*>::Iterator it = actordb.find(tolower(actor));
@@ -130,7 +129,7 @@ vector<Movie*> MovieDatabase::get_movies_with_actor(const string& actor) const
     return v;
 }
 
-vector<Movie*> MovieDatabase::get_movies_with_genre(const string& genre) const
+vector<Movie*> MovieDatabase::get_movies_with_genre(const string& genre) const      //same, but for genre
 {
     vector <Movie*> v;
     TreeMultimap<string, Movie*>::Iterator it = genredb.find(tolower(genre));

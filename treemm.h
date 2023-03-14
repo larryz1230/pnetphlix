@@ -11,7 +11,7 @@ class TreeMultimap
     
 private:
     
-    struct Node
+    struct Node     //private node struct to hold info
     {
         Node* left;
         Node* right;
@@ -27,59 +27,57 @@ private:
         }
     };
     
-    Node* n;
+    Node* n;    //private node pointer (head node)
     
     
     void insert (Node *p, const KeyType& key, const ValueType& value){
-        if (n==nullptr){
-            n = new Node(key, value);
+        if (n==nullptr){        //if this is the first node
+            n = new Node(key, value);    //set n to new node, created with these values
             return;
         }
         
-        if (key==p->key){
-            p->val.push_back(value);
+        if (key==p->key){       //if a node has been created with this key
+            p->val.push_back(value);    //add to vector
             return;
         }
         
-        if (key>p->key){
-            if (p->right == nullptr){
+        if (key>p->key){        //if curr node's key is greater than tree's key
+            if (p->right == nullptr){      //if right's empty, insert
                 p->right = new Node(key, value);
                 return;
-            } else {
+            } else {        //other wise, recurse into the right subtree.
                 insert (p->right, key, value);
             }
         }
-        else if (key < p->key){
-            if (p->left==nullptr){
+        else if (key < p->key){ //if curr node's key is less than tree's key
+            if (p->left==nullptr){      //if lefts's empty, insert
                 p->left = new Node(key, value);
                 return;
             } else {
-                insert (p->left, key, value);
+                insert (p->left, key, value);       //other wise, recurse into the left subtree.
             }
         }
         
     }
     
-    Node* findHelper (const KeyType& key, Node* p) const{
+    Node* findHelper (const KeyType& key, Node* p) const{       //binary search
         if (p!=nullptr){
-//            std::cout << p->key << std::endl;
-            
-            if (p->key==key){
+            if (p->key==key){       //if found, return
                 return p;
-            } else if (p->key>key){
+            } else if (p->key>key){     //if less, search left
                 return findHelper(key, p->left);;
             } else {
-                return findHelper(key, p->right);
+                return findHelper(key, p->right);       //if greater, search right
             }
         }
         return nullptr;
     }
     
     void destructorHelper(Node* n){
-        if (n!=nullptr){
-            destructorHelper(n->right);
+        if (n!=nullptr){        //if node is null, return
+            destructorHelper(n->right);     //else recurse left and right
             destructorHelper(n->left);
-            delete n;
+            delete n;       //and delete the node
         }
     }
     
@@ -94,14 +92,13 @@ public:
     public:
         Iterator()
         {
-            // Replace this line with correct code.
             curr = 0;
         }
         
         Iterator(Node* v){
-            if (v!=nullptr){
+            if (v!=nullptr){        //if not null
                 for (int i = 0; i<v->val.size(); i++){
-                    itvec.push_back(&v->val[i]);
+                    itvec.push_back(&v->val[i]);        //loop through v's vector and insert into itvec
                 }
             }
             curr = 0;
@@ -110,17 +107,13 @@ public:
         
         ValueType& get_value() const
         {
-            if (!is_valid()){
-                std::cout << "not defined" << std::endl;
-                //                return NULL;
-            }
             return *itvec[curr];  // Replace this line with correct code.
             
         }
         
         bool is_valid() const
         {
-            return curr<itvec.size();
+            return curr<itvec.size();       //check if vector has a value at current index
         }
         
         void advance()
@@ -129,44 +122,29 @@ public:
         }
         
     private:
-        std::vector<ValueType*> itvec;
-        int curr;
+        std::vector<ValueType*> itvec;      //to store values
+        int curr;   //index and advance
     };
     
     TreeMultimap()
     {
-        n = nullptr;
+        n = nullptr;        //set n as null initially
     }
     
     ~TreeMultimap()
     {
-        destructorHelper(n);
+        destructorHelper(n);    //call helper
     }
     
-    void printTree (){
-        printTree(n);
-    }
-    
-    void printTree (const Node* p){
-        if (p!=nullptr){
-            printTree (p->left);
-            for (int i=0; i<p->val.size(); i++){
-                std::cout << p->val.at(i) << std::endl;
-            }
-            printTree (p->right);
-        }
-    }
-    
-    void insert(const KeyType& key, const ValueType& value)
+    void insert(const KeyType& key, const ValueType& value)     //call recursive helper
     {
         insert(n, key, value);
     }
     
     
-    
     Iterator find(const KeyType& key) const
-    {   // Replace this line with correct code.
-        return Iterator(findHelper(key, n));
+    {
+        return Iterator(findHelper(key, n));    //call helper
     }
     
 };

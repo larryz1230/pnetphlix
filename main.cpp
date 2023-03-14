@@ -13,9 +13,8 @@ void findMatches(const Recommender& r,
 const MovieDatabase& md,
 const string& user_email,
 int num_recommendations) {
-// get up to ten movie recommendations for the user
 vector<MovieAndRank> recommendations =
-r.recommend_movies(user_email, 10);
+r.recommend_movies(user_email, num_recommendations);
     
     
 if (recommendations.empty())
@@ -36,57 +35,19 @@ cout << i << ". " << m->get_title() << " ("
 auto start = chrono::steady_clock::now();
 
 
-const string USER_DATAFILE  = "/Users/larryzhi/Desktop/cs32/p4/file.txt";
-
-
-const string MOVIE_DATAFILE = "/Users/larryzhi/Desktop/cs32/p4/p4/movies.txt";
-
-//const string USER_DATAFILE  = "users.txt";
+//const string USER_DATAFILE  = "/Users/larryzhi/Desktop/cs32/p4/file.txt";
 //
 //
-//const string MOVIE_DATAFILE = "movies.txt";
+//const string MOVIE_DATAFILE = "/Users/larryzhi/Desktop/cs32/p4/p4/movies.txt";
+
+const string USER_DATAFILE  = "users.txt";
+const string MOVIE_DATAFILE = "movies.txt";
 
 //#include "treemm.h"
 
 int main()
 {
-        
-//        UserDatabase udb;
-//        if (!udb.load(USER_DATAFILE))  // In skeleton, load always return false
-//        {
-//            cout << "Failed to load user data file " << USER_DATAFILE << "!" << endl;
-//            return 1;
-//        }
-//
-//        MovieDatabase mdb;
-//        mdb.load(MOVIE_DATAFILE);
-//        Recommender recommender(udb, mdb);
-//        for (;;)
-//        {
-//            cout << "Enter user email address (or quit): ";
-//            string email;
-//            getline(cin, email);
-//            if (email == "quit")
-//                return 0;
-//            User* u = udb.get_user_from_email(email);
-//            if (u == nullptr)
-//                cout << "No user in the database has that email address." << endl;
-//            else{
-//                vector<MovieAndRank> v = recommender.recommend_movies(email, 20000);
-//
-//                for (auto& it : v) {
-//
-//                        cout << mdb.get_movie_from_id(it.movie_id)->get_title()  << ' '
-//                            << it.compatibility_score << ' ' << mdb.get_movie_from_id(it.movie_id)->get_rating()<< endl;
-//                }
-//
-//            }
-//        }
-    
-    
 
-    
-//
     UserDatabase udb;
        udb.load(USER_DATAFILE);
     
@@ -102,17 +63,6 @@ int main()
     cout << "Took " << (chrono::duration_cast<chrono::milliseconds>(stop1 - stop).count()) << "ms" << endl;
 
     Recommender recommender(udb, mdb);
-//    vector<MovieAndRank> v = recommender.recommend_movies("AndrA34840@juno.com", 5);
-//
-//    for (auto& it : v) {
-//
-//            cout << it.movie_id << ' '
-//                << it.compatibility_score << endl;
-//    }
-//
-//
-//    User* user = udb.get_user_from_email("AndrA34840@juno.com");
-
     findMatches(recommender, mdb, "AndrA34840@juno.com", 10);
 
     

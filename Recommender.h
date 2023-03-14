@@ -4,12 +4,13 @@
 #include <string>
 #include <vector>
 #include "User.h"
+#include "Movie.h"
 #include <unordered_map>
 
 class UserDatabase;
 class MovieDatabase;
 
-struct MovieAndRank
+struct MovieAndRank     //given struct
 {
     MovieAndRank(const std::string& id, int score)
      : movie_id(id), compatibility_score(score)
@@ -20,8 +21,6 @@ struct MovieAndRank
 
 };
 
-
-
 class Recommender
 {
   public:
@@ -31,7 +30,7 @@ class Recommender
                                                int movie_count) const;
 
   private:
-    const UserDatabase* userdb;
+    const UserDatabase* userdb;     //pointers to both dbs
     const MovieDatabase* moviedb;
     void mysort(std::unordered_map<std::string, int>& M, std::vector<MovieAndRank>& v, int num, std::vector<std::string> userw) const;
     struct ranking
@@ -46,6 +45,9 @@ class Recommender
     };
     
     static bool cmp(ranking& a, ranking& b);
+    
+    //mysort, cmp are used for comparator sorting
+    //ranking struct makes it easier to organize data
 };
 
 #endif // RECOMMENDER_INCLUDED
