@@ -49,12 +49,12 @@ int main()
             if (u == nullptr)
                 cout << "No user in the database has that email address." << endl;
             else{
-                vector<MovieAndRank> v = recommender.recommend_movies(email, 5);
+                vector<MovieAndRank> v = recommender.recommend_movies(email, 1000);
                     
                 for (auto& it : v) {
             
                         cout << mdb.get_movie_from_id(it.movie_id)->get_title()  << ' '
-                            << it.compatibility_score << endl;
+                            << it.compatibility_score << ' ' << mdb.get_movie_from_id(it.movie_id)->get_rating()<< endl;
                 }
 
             }

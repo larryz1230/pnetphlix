@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "User.h"
+#include <unordered_map>
 
 class UserDatabase;
 class MovieDatabase;
@@ -32,7 +33,19 @@ class Recommender
   private:
     const UserDatabase* userdb;
     const MovieDatabase* moviedb;
+    void mysort(std::unordered_map<std::string, int>& M, std::vector<MovieAndRank>& v, int num, std::vector<std::string> userw) const;
+    struct ranking
+    {
+        ranking(std::string n, std::string a, int score, float b) : mr(a,score){
+            name = n;
+            rating = b;
+        }
+        MovieAndRank mr;
+        float rating;
+        std::string name;
+    };
     
+    static bool cmp(ranking& a, ranking& b);
 };
 
 #endif // RECOMMENDER_INCLUDED
