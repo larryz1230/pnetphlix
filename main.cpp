@@ -9,6 +9,29 @@
 #include "treemm.h"
 using namespace std;
 
+void findMatches(const Recommender& r,
+const MovieDatabase& md,
+const string& user_email,
+int num_recommendations) {
+// get up to ten movie recommendations for the user
+vector<MovieAndRank> recommendations =
+r.recommend_movies(user_email, 10);
+    
+    
+if (recommendations.empty())
+cout << "We found no movies to recommend :(.\n";
+else {
+for (int i = 0; i < recommendations.size(); i++) {
+const MovieAndRank& mr = recommendations[i];
+Movie* m = md.get_movie_from_id(mr.movie_id);
+cout << i << ". " << m->get_title() << " ("
+<< m->get_release_year() << ")\n Rating: "
+<< m->get_rating() << "\n Compatibility Score: "
+<< mr.compatibility_score << "\n";
+}
+}
+}
+
 
 auto start = chrono::steady_clock::now();
 
@@ -28,47 +51,57 @@ const string MOVIE_DATAFILE = "/Users/larryzhi/Desktop/cs32/p4/p4/movies.txt";
 int main()
 {
         
-        UserDatabase udb;
-        if (!udb.load(USER_DATAFILE))  // In skeleton, load always return false
-        {
-            cout << "Failed to load user data file " << USER_DATAFILE << "!" << endl;
-            return 1;
-        }
+//        UserDatabase udb;
+//        if (!udb.load(USER_DATAFILE))  // In skeleton, load always return false
+//        {
+//            cout << "Failed to load user data file " << USER_DATAFILE << "!" << endl;
+//            return 1;
+//        }
+//
+//        MovieDatabase mdb;
+//        mdb.load(MOVIE_DATAFILE);
+//        Recommender recommender(udb, mdb);
+//        for (;;)
+//        {
+//            cout << "Enter user email address (or quit): ";
+//            string email;
+//            getline(cin, email);
+//            if (email == "quit")
+//                return 0;
+//            User* u = udb.get_user_from_email(email);
+//            if (u == nullptr)
+//                cout << "No user in the database has that email address." << endl;
+//            else{
+//                vector<MovieAndRank> v = recommender.recommend_movies(email, 20000);
+//
+//                for (auto& it : v) {
+//
+//                        cout << mdb.get_movie_from_id(it.movie_id)->get_title()  << ' '
+//                            << it.compatibility_score << ' ' << mdb.get_movie_from_id(it.movie_id)->get_rating()<< endl;
+//                }
+//
+//            }
+//        }
     
-        MovieDatabase mdb;
-        mdb.load(MOVIE_DATAFILE);
-        Recommender recommender(udb, mdb);
-        for (;;)
-        {
-            cout << "Enter user email address (or quit): ";
-            string email;
-            getline(cin, email);
-            if (email == "quit")
-                return 0;
-            User* u = udb.get_user_from_email(email);
-            if (u == nullptr)
-                cout << "No user in the database has that email address." << endl;
-            else{
-                vector<MovieAndRank> v = recommender.recommend_movies(email, 1000);
-                    
-                for (auto& it : v) {
-            
-                        cout << mdb.get_movie_from_id(it.movie_id)->get_title()  << ' '
-                            << it.compatibility_score << ' ' << mdb.get_movie_from_id(it.movie_id)->get_rating()<< endl;
-                }
-
-            }
-        }
+    
 
     
 //
-//    UserDatabase udb;
-//       udb.load(USER_DATAFILE);
-//
-//       MovieDatabase mdb;
-//       mdb.load(MOVIE_DATAFILE);
-//
-//    Recommender recommender(udb, mdb);
+    UserDatabase udb;
+       udb.load(USER_DATAFILE);
+    
+    auto stop = chrono::steady_clock::now();
+
+    cout << "Took " << (chrono::duration_cast<chrono::milliseconds>(stop - start).count()) << "ms" << endl;
+
+       MovieDatabase mdb;
+       mdb.load(MOVIE_DATAFILE);
+    
+    auto stop1 = chrono::steady_clock::now();
+
+    cout << "Took " << (chrono::duration_cast<chrono::milliseconds>(stop1 - stop).count()) << "ms" << endl;
+
+    Recommender recommender(udb, mdb);
 //    vector<MovieAndRank> v = recommender.recommend_movies("AndrA34840@juno.com", 5);
 //
 //    for (auto& it : v) {
@@ -80,11 +113,15 @@ int main()
 //
 //    User* user = udb.get_user_from_email("AndrA34840@juno.com");
 
+    findMatches(recommender, mdb, "AndrA34840@juno.com", 10);
 
     
-    auto stop = chrono::steady_clock::now();
+    
+    auto stop2 = chrono::steady_clock::now();
 
-    cout << "Took " << (chrono::duration_cast<chrono::milliseconds>(stop - start).count()) << "ms" << endl;
+    cout << "Took " << (chrono::duration_cast<chrono::milliseconds>(stop2- stop1).count()) << "ms" << endl;
     
-    
+    cout << "Took " << (chrono::duration_cast<chrono::milliseconds>(stop2- start).count()) << "ms" << endl;
 }
+
+

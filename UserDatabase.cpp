@@ -14,6 +14,13 @@ UserDatabase::UserDatabase()
     // Replace this line with correct code.
 }
 
+UserDatabase::~UserDatabase()
+{
+    for (User* u : todeleteu){
+        delete u;
+    }
+}
+
 bool UserDatabase::load(const string& filename)
 {
 
@@ -41,7 +48,9 @@ bool UserDatabase::load(const string& filename)
             u_history.push_back(text);
         }
         getline(myFile, text);
-        userdb.insert(email, new User(name, email, u_history));
+        User* temp = new User(name, email, u_history);
+        userdb.insert(email, temp);
+        todeleteu.push_back(temp);
     }
     myFile.close();
     opened = true;

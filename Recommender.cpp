@@ -86,19 +86,11 @@ vector<MovieAndRank> Recommender::recommend_movies(const string& user_email, int
         for (int i=0; i<user->get_watch_history().size(); i++){
             string id = user->get_watch_history().at(i);
 
-            structset.insert(make_pair(id,-1));
-
-        }
-        
-        
-        for (int i=0; i<user->get_watch_history().size(); i++){
-            string id = user->get_watch_history().at(i);
-
             Movie* m = moviedb->get_movie_from_id(id);
 
             for (int j=0; j<m->get_directors().size(); j++){
                 
-
+                
                 
                 vector<Movie*> temp = moviedb->get_movies_with_director(m->get_directors().at(j));
                 for (int k=0; k<temp.size(); k++){

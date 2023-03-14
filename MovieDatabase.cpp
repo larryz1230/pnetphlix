@@ -33,6 +33,13 @@ MovieDatabase::MovieDatabase()
     opened = false;
 }
 
+MovieDatabase::~MovieDatabase()
+{
+    for (Movie* m : todeletem){
+        delete m;
+    }
+}
+
 bool MovieDatabase::load(const string& filename)
 {
     ifstream myFile(filename);
@@ -67,6 +74,7 @@ bool MovieDatabase::load(const string& filename)
         seperate(temp_g, m_genres);
         
         Movie *m = new Movie(id, name, release, m_directors, m_actors, m_genres, rating);
+        todeletem.push_back(m);
         iddb.insert(tolower(id), m);
         for (string d: m_directors){
             directordb.insert(tolower(d), m);
