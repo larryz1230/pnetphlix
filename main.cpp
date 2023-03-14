@@ -35,13 +35,13 @@ cout << i << ". " << m->get_title() << " ("
 auto start = chrono::steady_clock::now();
 
 
-//const string USER_DATAFILE  = "/Users/larryzhi/Desktop/cs32/p4/file.txt";
-//
-//
-//const string MOVIE_DATAFILE = "/Users/larryzhi/Desktop/cs32/p4/p4/movies.txt";
+const string USER_DATAFILE  = "/Users/larryzhi/Desktop/cs32/p4/file.txt";
 
-const string USER_DATAFILE  = "users.txt";
-const string MOVIE_DATAFILE = "movies.txt";
+
+const string MOVIE_DATAFILE = "/Users/larryzhi/Desktop/cs32/p4/p4/movies.txt";
+
+//const string USER_DATAFILE  = "users.txt";
+//const string MOVIE_DATAFILE = "movies.txt";
 
 //#include "treemm.h"
 
